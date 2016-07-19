@@ -40,15 +40,16 @@ gulp.task('sass', function(){
 // syncs the browser with the server
 gulp.task('browserSync', function() {
   browserSync.init({
-    proxy: 'localhost/MadMenWebsite/main/pages/homepage.php'
-  })
+    proxy: 'localhost/MadMenWebsite/main/pages/homepage.php',
+    online: true
+  });
 });
 
 // watches files for changes and syncs with the browser
 gulp.task('watch', ['browserSync', 'sass'], function () {
-  gulp.watch('main/sass/**/*.scss', ['sass']); 
+  gulp.watch('main/sass/**/*.scss', ['sass']);
   // Reloads the browser whenever php or JS files change
-  gulp.watch('main/pages/*.php', browserSync.reload); 
+  gulp.watch('main/pages/*.php', browserSync.reload);
   gulp.watch('main/js/**/*.js', browserSync.reload);
 });
 
@@ -77,4 +78,3 @@ gulp.task('images', function(){
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
-

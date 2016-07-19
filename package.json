@@ -26,5 +26,8 @@
     "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.0",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-watch": "^4.3.8"
   }
 }

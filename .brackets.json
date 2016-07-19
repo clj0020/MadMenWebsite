@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Applications/MAMP/htdocs/MadMenWebsite/bower_components/date.js/build/date-fr-FR.js",
+        "/Applications/MAMP/htdocs/MadMenWebsite/bower_components/date.js/build/date-fr-LU.js",
+        "/Applications/MAMP/htdocs/MadMenWebsite/bower_components/date.js/build/date-gl-ES.js"
+    ]
+}

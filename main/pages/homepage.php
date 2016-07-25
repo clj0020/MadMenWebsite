@@ -79,40 +79,55 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="need-to-grow">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 pull-left personal-touch benefits-section">
-            <h1 class="text-center">Personal Touch</h1>
-            <p>
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-            </p>
-          </div>
+          <h1 class="text-center">Need to grow?</h1>
+          <h2 class="text-center">We can help.</h2>
+          <p class="text-center">
+            We will be with you every step of the way while we build your custom application or website.
+            Mad Men has experience building all kinds of software and we'll meet your business or personal needs.
+            We'll make it an enjoyable and simple experience for you while you get what you want.
+          </p>
         </div>
-        <div class="row">
-          <div class="col-lg-6 pull-right easy benefits-section">
-            <h1 class="text-center">Big Problems Solved Simply</h1>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-3 service">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
             <p>
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+              Websites
             </p>
+            <a href="" class="btn btn-primary">Get a Quote</a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 pull-left custom benefits-section">
-            <h1 class="text-center">Custom</h1>
+          <div class="col-lg-3 service">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
             <p>
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
-              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+              Mobile Applications
             </p>
+            <a href="" class="btn btn-primary">Get a Quote</a>
+          </div>
+          <div class="col-lg-3 service">
+            <i class="fa fa-cloud" aria-hidden="true"></i>
+            <p>
+              Infrastructure
+            </p>
+            <a href="" class="btn btn-primary">Get a Quote</a>
+          </div>
+          <div class="col-lg-3 service">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <p>
+              Maintenance
+            </p>
+            <a href="" class="btn btn-primary">Get a Quote</a>
           </div>
         </div>
       </div>
     </section>
+
 
 
     <footer class="section">

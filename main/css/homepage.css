@@ -132,6 +132,9 @@ hr.small {
   .touch-of-madness #touch-of-madness img {
     max-width: 550px;
     margin: auto; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .touch-of-madness #touch-of-madness img {
+        max-width: 200px; } }
 
 .roots-in-auburn {
   width: 100%;
@@ -148,30 +151,62 @@ hr.small {
     padding: 0;
     font-size: 4em; }
 
-.benefits h1 {
-  font-size: 3em;
-  color: white;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0.5em; }
+.need-to-grow {
+  height: 300px;
+  position: relative; }
+  .need-to-grow .container-fluid {
+    height: 300px;
+    padding: 0; }
+  .need-to-grow .row {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; }
+  .need-to-grow h1 {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5em; }
+  .need-to-grow h2 {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5em; }
+  .need-to-grow p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-right: 2em;
+    margin-left: 2em; }
 
-.benefits p {
-  font-size: 1em;
-  color: white;
-  padding: 1.5em; }
-
-.benefits .benefits-section {
-  padding: 0;
-  height: 300px; }
-
-.benefits .personal-touch {
-  background-color: green; }
-
-.benefits .easy {
-  background-color: red; }
-
-.benefits .custom {
-  background-color: green; }
+.services {
+  height: 300px;
+  background: #C1392B;
+  position: relative; }
+  .services .container-fluid {
+    height: 300px;
+    padding: 0; }
+  .services .row {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; }
+  .services .btn-primary {
+    background: none;
+    padding: 12px 22px;
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
+    margin-top: 1.5em; }
+    .services .btn-primary:hover, .services .btn-primary:focus, .services .btn-primary:active {
+      color: gray;
+      border-color: gray; }
+  .services i {
+    font-size: 6em;
+    color: white; }
+  .services p {
+    font-size: 2em;
+    color: white; }
 
 footer {
   background-color: black; }

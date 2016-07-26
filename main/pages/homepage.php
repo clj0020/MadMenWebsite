@@ -96,28 +96,28 @@
     <section class="services">
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="col-lg-3 service">
+          <div class="col-md-3 service">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             <p>
               Websites
             </p>
             <a href="" class="btn btn-primary">Get a Quote</a>
           </div>
-          <div class="col-lg-3 service">
+          <div class="col-md-3 service">
             <i class="fa fa-mobile" aria-hidden="true"></i>
             <p>
               Mobile Applications
             </p>
             <a href="" class="btn btn-primary">Get a Quote</a>
           </div>
-          <div class="col-lg-3 service">
+          <div class="col-md-3 service">
             <i class="fa fa-cloud" aria-hidden="true"></i>
             <p>
               Infrastructure
             </p>
             <a href="" class="btn btn-primary">Get a Quote</a>
           </div>
-          <div class="col-lg-3 service">
+          <div class="col-md-3 service">
             <i class="fa fa-cogs" aria-hidden="true"></i>
             <p>
               Maintenance

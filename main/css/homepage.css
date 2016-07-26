@@ -152,17 +152,11 @@ hr.small {
     font-size: 4em; }
 
 .need-to-grow {
-  height: 300px;
-  position: relative; }
+  height: 300px; }
   .need-to-grow .container-fluid {
-    height: 300px;
     padding: 0; }
   .need-to-grow .row {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%; }
+    margin: 0; }
   .need-to-grow h1 {
     font-size: 3em;
     color: black;
@@ -181,16 +175,9 @@ hr.small {
 
 .services {
   height: 300px;
-  background: #C1392B;
-  position: relative; }
+  background: #C1392B; }
   .services .container-fluid {
-    height: 300px;
     padding: 0; }
-  .services .row {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%; }
   .services .btn-primary {
     background: none;
     padding: 12px 22px;

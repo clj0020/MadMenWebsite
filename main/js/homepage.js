@@ -84,52 +84,158 @@ $(document).ready(function() {
     speed :	0.15
   });
 
+  var terms = ["Mad branders.", "Mad innovators.", "Mad consultants.", "Mad communicators.", "Mad collaborators.", "Mad creators.", "Mad Men."];
 
-
-
-  function adjustComputerMargin() {
-    var $this = $(".desktop");
-    $this.css('margin-top', (($(".lead").height() - $(".desktop").height()) / 2) - 10);
-  }
-
-  function adjustIphoneMargin() {
-    var $this = $(".mobile");
-    $this.css('margin-top', (($(".lead").height() - $(".mobile").height()) / 2) - 50);
-  }
-
-  function centerMobileInputText() {
-    var $googleContent = $(".iphone .google-content");
-    var $googleInput = $(".iphone .google-content input");
-
-    $googleInput.css('left', (($($googleContent).width() - $($googleInput).width()) / 2) - 2);
-  }
-
-  function centerDesktopInputText() {
-    var $googleContent = $(".desktop .google-content");
-    var $googleInput = $(".desktop .google-content input");
-
-    $googleInput.css('left', (($($googleContent).width() - $($googleInput).width()) / 2) - 2);
-  }
-
-
-
-  Date.prototype.getRealYear = function() {
-    if(this.getFullYear)
-    return this.getFullYear();
-    else
-    return this.getYear() + 1900;
-  };
-
-  Date.prototype.getMonthName = function(lang) {
-    lang = lang && (lang in Date.locale) ? lang : 'en';
-    return Date.locale[lang].month_names[this.getMonth()];
-  };
-
-  Date.locale = {
-    en: {
-      month_names: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      month_names_short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  function rotateTerm() {
+    var ct = $("#rotate").data("term") || 0;
+    $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).show("puff", 1000)
+              .delay(2000).hide("puff", 1000, rotateTerm);
     }
-  };
+  $(rotateTerm);
+
+  $('.quote-form fieldset:first-child').fadeIn('slow');
+
+  $('.quote-form input[type="text"], .quote-form input[type="password"], .quote-form textarea').on('focus', function() {
+    $(this).removeClass('input-error');
+  });
+
+  // next step
+  $('.quote-form .btn-next').on('click', function() {
+    var parent_fieldset = $(this).parents('fieldset');
+    var next_step = true;
+
+    parent_fieldset.find('input[type="text"], textarea').each(function() {
+      if( $(this).val() == "" ) {
+        $(this).addClass('input-error');
+        next_step = false;
+      }
+      else {
+        $(this).removeClass('input-error');
+      }
+    });
+
+    if( next_step ) {
+      parent_fieldset.fadeOut(400, function() {
+        $(this).next().fadeIn();
+      });
+    }
+
+  });
+
+  // previous step
+  $('.quote-form .btn-previous').on('click', function() {
+    $(this).parents('fieldset').fadeOut(400, function() {
+      $(this).prev().fadeIn();
+    });
+  });
+
+  // submit
+  $('.quote-form').on('submit', function(e) {
+
+    $(this).find('#name, input[type="email"], input[type="tel"]').each(function() {
+      if( $(this).val() == "" ) {
+        e.preventDefault();
+        $(this).addClass('input-error');
+      }
+      else {
+        $(this).removeClass('input-error');
+      }
+    });
+  });
+
+
+  // Checkboxes
+  $('.small-business-btn').click('click', function() {
+
+    var checkbox = $('#small-business-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+  $('.individual-btn').click('click', function() {
+
+    var checkbox = $('#individual-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+  $('.non-profit-btn').click('click', function() {
+
+    var checkbox = $('#non-profit-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+  $('.website-btn').click('click', function() {
+
+    var checkbox = $('#website-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+  $('.mobile-btn').click('click', function() {
+
+    var checkbox = $('#mobile-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+  $('.business-solution-btn').click('click', function() {
+
+    var checkbox = $('#business-solution-checkbox');
+
+    if( checkbox.attr("checked") == undefined){
+        checkbox.attr("checked", true);
+        $(this).css('background-color', 'gray');
+
+    } else {
+        checkbox.attr("checked", false);
+        $(this).css('background-color', 'white');
+    }
+  });
+
+
+
+  jQuery(function($){
+     $("#phone").mask("(999) 999-9999");
+  });
+
+
+
 
 });

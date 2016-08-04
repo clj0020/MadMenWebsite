@@ -239,3 +239,44 @@ $(document).ready(function() {
 
 
 });
+
+var OrigWidth = $("#carson-pic").width();
+
+var fitImages = function(){
+    $("#carson-pic").removeAttr( "style" );
+    $("#zach-pic").removeAttr( "style" );
+    var changedWidth = $("#carson-pic").height();
+    var h1 = $("#carson-pic").height();
+    var h2 = $("#zach-pic").height();
+    //it can be done only with height but using double check          ratio of the images is a bit more acurate
+    if (changedWidth < OrigWidth) //expand
+    {
+        //using higher image as refference when maximize
+        if (h1 > h2)
+        {
+          $("#zach-pic").height(h1);
+        }
+        else if (h2 > h1)
+        {
+            $("#carson-pic").height(h2);
+        }
+    }
+    else
+    {
+        //using lower image as refference when minimize
+       if (h1 < h2)
+        {
+          $("#carson-pic").height(h2);
+        }
+        else if (h2 < h1)
+        {
+            $("#zach-pic").height(h1);
+        }
+    }
+    OrigWidth = changedWidth;
+    return 0;
+}
+
+$(window).resize(fitImages);
+
+$(document).ready(fitImages);

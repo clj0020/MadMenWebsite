@@ -182,24 +182,148 @@ if(isset($_POST['submit'])){
     </div>
   </section>
 
+  <section class="project-will-be">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center project-will-be-header">Your Project will be..</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="project-will-be-item">
+                <h1 class="text-center">Quick</h1>
+                <p>
+                  &emsp;We can get your project done quick.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="project-will-be-item">
+                <h1 class="text-center">Simple</h1>
+                <p>
+                  &emsp;We'll do all the work, you don't need to lift a finger
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="project-will-be-item">
+                <h1 class="text-center">Custom</h1>
+                <p>
+                  &emsp;We'll create solutions that fit your needs.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="project-will-be-item">
+                <h1 class="text-center">Personal</h1>
+                <p>
+                  &emsp;We'll work with you so you get a personal touch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="container-fluid need-to-grow">
-    <div class="row">
-      <div class="col-lg-6">
+  <section class="need-to-grow">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
           <h1 class="text-center">Need to grow your business?</h1>
+          <h5 class="text-center">Lorem Ipsum lorem ipsum lorem ipsum lorem ipsum.</h5>
+          <hr />
           <p>
             &emsp;We will be with you every step of the way while we build your custom application or website.
             Mad Men has experience building all kinds of software and we'll meet your business or personal needs.
             We'll make it an enjoyable and simple experience for you while you get what you want.
           </p>
-      </div>
-      <div class="col-lg-6">
-            <img src="../img/bean.png" class="img-circle" alt="Cinque Terre" />
+        </div>
+        <div class="col-lg-6">
+          <img src="../img/all-devices.png" class="img-circle" alt="Cinque Terre" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
+  <section class="portfolio">
+    <div class="container-fluid">
+      <h1 class="text-center">Our Work</h1>      
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="fuji">
+            <div class="portfolio-item">
+              <h4 class="text-center">Fuji Sushi Bar</h4>
+              <a href="http://www.fujisushiau.com" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div id="bean">
+            <div class="portfolio-item">
+              <h4 class="text-center">Bean Gourmet Coffee</h4>
+              <a href="http://www.beangourmetcoffee.com" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
 
+        </div>
+        <div class="col-lg-4">
+          <div id="fuji">
+            <div class="portfolio-item">
+              <h4 class="text-center">Fuji Sushi Bar</h4>
+              <a href="http://www.fujisushiau.com" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn btn-primary" id="portfolio-see-more">See More</a>
+
+    </div>
+  </section>
+
+  <section class="roots-in-auburn">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center">Roots in Auburn</h1>
+          <p>
+            &emsp;Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+          </p>
+          <p>
+            &emsp;Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+            Lorem Ipsum lorem ipsum lorem ipsum.Lorem Ipsum lorem ipsum lorem ipsum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meet-the-team">
+    <div class="container-fluid">
+      <h1 class="text-center meet-the-team-header">Meet the Team</h1>
+      <div class="row gutter-0 team-member-holder">
+        <div class="col-xs-3">
+          <img id="carson-pic" class="team-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Daniel_Craig_-_Film_Premiere_%22Spectre%22_007_-_on_the_Red_Carpet_in_Berlin_(22387409720)_(cropped).jpg" />
+          <h4 class="text-center">Carson Jones</h4>
+          <p class="text-center">CEO and Developer</p>
+        </div>
+        <div class="col-xs-3">
+          <img id="zach-pic" class="team-picture" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Portrait_of_a_man_of_noble_birth_with_a_book.jpg"/>
+          <h4 class="text-center">Zach Chandler</h4>
+          <p class="text-center">CTO and Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="get-a-quote">
     <div class="container-fluid">

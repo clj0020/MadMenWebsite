@@ -21,12 +21,47 @@ h6 {
   font-family: 'Oswald','Helvetica Neue',Arial,sans-serif;
   font-weight: 100; }
 
+.btn-primary {
+  background: none;
+  padding: 12px 22px;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: gray;
+    border-color: gray;
+    background: none; }
+
 .container-fluid {
   padding: 0; }
 
 .row {
   margin-left: 0;
   margin-right: 0; }
+
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px; }
+
+.gutter-20 > [class^="col-"], .gutter-20 > [class^=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px; }
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+.gutter-0.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
 
 .jumbo {
   width: 100%;
@@ -119,7 +154,7 @@ h6 {
 .big-problems-simply {
   background: url("../img/computer-work.png") no-repeat center center fixed;
   background-size: cover;
-  height: 400px; }
+  height: 600px; }
   .big-problems-simply .container-fluid {
     height: 100%; }
     .big-problems-simply .container-fluid .row {
@@ -136,25 +171,114 @@ h6 {
           font-weight: 300;
           color: white; }
 
+.project-will-be .project-will-be-header {
+  color: #C1392B;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
+.project-will-be .project-will-be-item {
+  height: 200px;
+  border: 1px solid black;
+  padding: 0; }
+  .project-will-be .project-will-be-item h1 {
+    background: #C1392B;
+    color: white;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    margin: 0;
+    margin-bottom: .5em; }
+  .project-will-be .project-will-be-item p {
+    margin-right: 0.9em;
+    margin-left: 0.5em; }
+
 .need-to-grow {
-  height: 500px; }
-  .need-to-grow .row {
+  height: 700px; }
+  .need-to-grow .container-fluid {
     height: 100%; }
-    .need-to-grow .row .col-lg-6 {
+    .need-to-grow .container-fluid .row {
       height: 100%; }
-      .need-to-grow .row .col-lg-6 h1 {
-        margin-top: 3em;
-        font-size: 4em; }
-      .need-to-grow .row .col-lg-6 p {
-        margin-top: 2em;
-        font-size: 1.3em; }
-      .need-to-grow .row .col-lg-6 .img-circle {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
+      .need-to-grow .container-fluid .row [class^="col-"] {
+        height: 100%; }
+        .need-to-grow .container-fluid .row [class^="col-"] h1 {
+          margin-top: 4em;
+          margin-bottom: .5em;
+          font-size: 4em;
+          color: #C1392B;
+          padding-right: .5em;
+          padding-left: .5em; }
+        .need-to-grow .container-fluid .row [class^="col-"] h5 {
+          font-size: 1.5em;
+          padding-right: .5em;
+          padding-left: .5em; }
+        .need-to-grow .container-fluid .row [class^="col-"] hr {
+          width: 85%; }
+        .need-to-grow .container-fluid .row [class^="col-"] p {
+          margin-top: 2em;
+          font-size: 1.3em;
+          padding-right: 1.5em;
+          padding-left: 1.5em; }
+        .need-to-grow .container-fluid .row [class^="col-"] .img-circle {
+          width: 500px;
+          height: 500px;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+
+.portfolio {
+  background: #F5F5F5; }
+  .portfolio h1 {
+    font-size: 4em;
+    color: #C1392B;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .portfolio .portfolio-item {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2em;
+    padding-top: 2.5em; }
+    .portfolio .portfolio-item h4 {
+      font-size: 2em;
+      color: white; }
+    .portfolio .portfolio-item .btn-primary {
+      margin-top: 1em;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+  .portfolio #bean {
+    background: url("../img/bean.png") no-repeat center center;
+    background-size: cover; }
+  .portfolio #portfolio-see-more {
+    background: none;
+    padding: 12px 22px;
+    border: 2px solid #C1392B;
+    border-radius: 0;
+    color: #C1392B;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1em;
+    margin-bottom: 3em; }
+
+.roots-in-auburn {
+  height: 600px;
+  background: url("../img/roots.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  .roots-in-auburn .container-fluid {
+    height: 100%; }
+    .roots-in-auburn .container-fluid .row {
+      height: 100%; }
+      .roots-in-auburn .container-fluid .row .col-lg-6 {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); }
+        .roots-in-auburn .container-fluid .row .col-lg-6 h1 {
+          margin-top: 1em;
+          color: white; }
+        .roots-in-auburn .container-fluid .row .col-lg-6 p {
+          margin-top: 2em;
+          font-size: 1em;
+          font-weight: 300;
+          color: white; }
 
 .get-a-quote {
   background: #C1392B; }
@@ -162,57 +286,22 @@ h6 {
     color: white;
     margin-top: 1em; }
   .get-a-quote .get-a-quote-btn {
-    background: none;
-    padding: 12px 22px;
-    border: 2px solid white;
-    border-radius: 0;
-    color: white;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     position: relative;
     left: 50%;
     transform: translateX(-50%); }
-    .get-a-quote .get-a-quote-btn:hover, .get-a-quote .get-a-quote-btn:focus, .get-a-quote .get-a-quote-btn:active {
-      color: gray;
-      border-color: gray; }
 
-.touch-of-madness {
-  padding-right: 0;
-  padding-left: 0;
-  background: black;
-  color: white;
-  font-family: 'Oswald'; }
-  .touch-of-madness #touch-of-madness {
-    padding-top: 2em;
-    padding-bottom: 2em; }
-    .touch-of-madness #touch-of-madness p {
-      font-size: 3em; }
-    .touch-of-madness #touch-of-madness h1 {
-      font-size: 5em; }
-    .touch-of-madness #touch-of-madness img {
-      max-width: 550px;
-      margin: auto; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .touch-of-madness #touch-of-madness img {
-          max-width: 200px; } }
-      @media (max-width: 480px) {
-        .touch-of-madness #touch-of-madness img {
-          max-width: 200px; } }
-
-.roots-in-auburn {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 0;
-  padding: 0;
-  overflow: auto;
-  background: url("../img/roots.jpg") no-repeat center center fixed;
-  background-size: cover; }
-  .roots-in-auburn h1 {
-    font-family: 'Kaushan Script', cursive;
-    color: #FAFAFA;
-    text-shadow: 2px 2px black;
-    padding: 0;
-    font-size: 4em; }
+.meet-the-team {
+  padding-bottom: 2em; }
+  .meet-the-team .meet-the-team-header {
+    margin-bottom: 1em; }
+  .meet-the-team .team-member-holder img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    display: block; }
 
 footer {
   background-color: black; }
